@@ -24,7 +24,7 @@ function App() {
       {error && <p>Invalid username or password</p>}
 
       {isLogin ? (
-        "Welcome, user!"
+        <p>Welcome, user!</p>
       ) : (
         <form action="" onSubmit={handleSubmit}>
           <label htmlFor="username">Username: </label>
