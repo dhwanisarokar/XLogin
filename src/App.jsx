@@ -9,12 +9,12 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (username !== "dhwani" && password !== "123") {
-      setError(true);
-    } else {
+    console.log(username, password);
+    if (username === "dhwani" && password === "123") {
       setError(false);
       setIsLogin(true);
+    } else {
+      setError(true);
     }
   };
 
@@ -26,7 +26,7 @@ function App() {
       {isLogin ? (
         <p>Welcome, user!</p>
       ) : (
-        <form action="" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <label htmlFor="username">Username: </label>
           <input
             type="text"
