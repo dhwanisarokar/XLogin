@@ -10,7 +10,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(username, password);
-    if (username === "dhwani" && password === "123") {
+    if (username === "user" && password === "password") {
       setError(false);
       setIsLogin(true);
     } else {
